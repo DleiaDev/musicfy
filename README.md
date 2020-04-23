@@ -3,9 +3,12 @@
 This web app allows you to listen to various types of music.
 
 ### Technologies utilized
-- Webpack
-- Vue.js
 - PHP (MVC from scratch)
+- Vue.js
+- Webpack
+
+### APIs utilized
+- Spotify
 
 ### Features
 - Listening to featured playlists on 'Home' page
