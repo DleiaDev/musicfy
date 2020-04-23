@@ -1,0 +1,198 @@
+.item {
+  height: 86vh;
+  margin: 0;
+  padding-top: 2.5vw;
+}
+.item > .left,
+.item > .right {
+  position: relative;
+}
+
+// Left
+.item > .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.item > .left > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.item > .left img {
+  display: block;
+  margin-bottom: 1vw;
+  max-width: 100%;
+}
+.item > .left h3.name {
+  margin-bottom: auto;
+  margin-bottom: 0.4vw;
+  font-weight: bold;
+  text-align: center;
+}
+.item > .left .buttons {
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+}
+.item > .left .buttons .icon {
+  margin-left: 0.6vw;
+}
+.item > .left .dropdown {
+  font-size: 1.5vw;
+  margin-left: 1vw
+}
+.item > .left .dropdown .icon {
+  cursor: pointer;
+  transition: 0.1s;
+  margin-left: 0.6vw;
+}
+.item > .left .dropdown .icon::after {
+  display: none;
+}
+.item > .left .dropdown .dropdown-menu {
+  padding: 0;
+  margin: 0;
+}
+.item > .left .dropdown .dropdown-menu a {
+  padding-top: 0.4vw;
+  padding-bottom: 0.4vw;
+  font-size: 0.9vw;
+}
+.item > .left .description {
+  text-align: center;
+  margin-top: 1vw;
+  max-width: 70%;
+}
+.item > .left .count {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0.7vw;
+}
+.item > .left .count.mobile {
+  display: none;
+}
+.item > .left .release-date {
+  font-size: 0.9vw;
+}
+
+// Right
+.item > .right {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.item > .right .track {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.6vw 2.5vw 0.6vw 1.2vw;
+  transition: 0.1s;
+  border-radius: 0.6vw;
+}
+.item > .right .track:hover {
+  background-color: #ECF1F8;
+}
+.item > .right .track.active {
+  background: #4d5aea;
+  background: -moz-linear-gradient(left,  #4d5aea 0%, #7786f4 100%);
+  background: -webkit-linear-gradient(left,  #4d5aea 0%,#7786f4 100%);
+  background: linear-gradient(to right,  #4d5aea 0%,#7786f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d5aea', endColorstr='#7786f4',GradientType=1 );
+}
+.item > .right .track.active * {
+  color: white !important;
+}
+.item > .right .track.active .left .icon {
+  color: #4E5BEA;
+}
+.item > .right .track.active .title {
+  color: #4E5BEA;
+  font-weight: bold;
+}
+.item > .right .track .left {
+  display: flex;
+}
+.item > .right .track .left .icon {
+  padding-top: 0.3vw;
+}
+.item > .right .track .left .track-info {
+  margin-left: 0.9vw;
+}
+.item > .right .track .left .artist-album {
+  margin-top: -0.2vw;
+  color: #6a707d;
+  font-size: 0.8vw;
+}
+.item > .right .track .right {
+  display: flex;
+}
+.item > .right .track .right .dropdown {
+  display: flex;
+  align-items: center;
+  margin-right: 3vw;
+  opacity: 0;
+}
+.item > .right .track .right .dropdown .icon {
+  font-size: 1vw;
+}
+.item > .right .track .right .dropdown .icon::after {
+  display: none;
+}
+.item > .right .track .right .dropdown .dropdown-menu {
+  padding: 0;
+  margin: 0;
+}
+.item > .right .track .right .dropdown .dropdown-menu a {
+  padding-top: 0.4vw;
+  padding-bottom: 0.4vw;
+  color: #252525 !important;
+  font-size: 0.9vw;
+}
+.item > .right .track:hover .right .dropdown {
+  opacity: 1;
+}
+
+// <= 1199px
+// @media (max-width: 1199px) {
+//   .item  {
+//     height: auto;
+//     // padding: 60px 40px 0 40px;
+//   }
+//   .item > .right {
+//     padding: 0;
+//     // padding-top: 20px;
+//     border-top: 0.06vw solid grey;
+//   }
+//   .item > .left {
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     padding: 0;
+//     padding-bottom: 20px;
+//   }
+//   .item > .left img {
+//     max-width: 200px;
+//     margin: 0;
+//   }
+//   .item > .left > div {
+//     display: block;
+//     text-align: left;
+//     padding-left: 30px;
+//   }
+//   .item > .left .name {
+//     text-align: left;
+//   }
+//   .item > .left .description {
+//     display: none;
+//   }
+//   .item > .left .count {
+//     display: none;
+//   }
+//   .item > .left .count.mobile {
+//     display: block;
+//     font-weight: 500;
+//     font-size: 14px;
+//   }
+// }

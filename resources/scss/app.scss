@@ -1,0 +1,72 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~rangeslider.js/dist/rangeslider.css';
+
+// Font
+// @font-face {
+//   font-family: "Circular Std Book";
+//   src: url("./fonts/CircularStdBook.eot"); /* IE9*/
+//   src: url("./fonts/CircularStdBook.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+//   url("./fonts/CircularStdBook.woff2") format("woff2"), /* chrome、firefox */
+//   url("./fonts/CircularStdBook.woff") format("woff"), /* chrome、firefox */
+//   url("./fonts/CircularStdBook.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+//   url("./fonts/CircularStdBook.svg#CircularStdBook") format("svg"); /* iOS 4.1- */
+// }
+
+// Items (playlists, albums, artists) - grid
+@import 'items';
+
+// Item (playlist and album components)
+@import 'item';
+
+h6 {
+  font-size: 1vw;
+}
+h3 {
+  font-size: 1.667vw;
+}
+h2 {
+  font-size: 1.9vw
+}
+h1 {
+  font-size: 2.38vw;
+}
+
+.swal2-popup.swal2-toast {
+  padding: 0.8vw !important;
+}
+.swal2-title {
+  font-size: 1.2vw !important;
+}
+.swal2-icon-show {
+  font-size: 0.8vw !important;
+}
+
+// Buttons
+.btn.btn-primary {
+  background: #4d5aea;
+  background: -moz-linear-gradient(left,  #4d5aea 0%, #7786f4 100%);
+  background: -webkit-linear-gradient(left,  #4d5aea 0%,#7786f4 100%);
+  background: linear-gradient(to right,  #4d5aea 0%,#7786f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d5aea', endColorstr='#7786f4',GradientType=1 );
+  display: inline-block;
+  padding: 0.4vw 2vw;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 2vw;
+  text-transform: uppercase;
+  font-size: 1vw;
+}
+.btn.btn-primary:hover {
+  background: #636ee8;
+  background: -moz-linear-gradient(left,  #636ee8 1%, #919ef2 100%);
+  background: -webkit-linear-gradient(left,  #636ee8 1%,#919ef2 100%);
+  background: linear-gradient(to right,  #636ee8 1%,#919ef2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636ee8', endColorstr='#919ef2',GradientType=1 );
+}
+
+body {
+  background-color: #f8fafc;
+  color: #252525;
+  font-size: 0.9vw;
+}

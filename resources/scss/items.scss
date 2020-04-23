@@ -1,0 +1,65 @@
+.items h1 {
+  padding-top: 4vw;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+.playlists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.playlist {
+  width: 16vw;
+  margin: 0.35vw;
+  display: block;
+  padding: 1vw;
+  background-color: #ECF1F8;
+  color: #252525;
+  border-radius: 1vw;
+  text-decoration: none;
+}
+.playlist:hover {
+  text-decoration: none;
+  color: #252525;
+}
+.playlist .image-wrapper {
+  height: 14.1vw;
+  overflow: hidden;
+}
+.playlist .image {
+  height: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.25s;
+}
+.playlist:hover .image {
+  transform: scale(1.1);
+}
+.playlist .description {
+  margin-top: 1vw;
+  font-size: 0.9vw;
+}
+
+/* List of albums */
+.playlist .title-artist {
+  margin-top: 1vw;
+}
+.playlist .title {
+  font-weight: bold;
+}
+.playlist .artists {
+  font-size: 0.9vw;
+}
+
+/* List of artists */
+.items#artists .image {
+  border-radius: 50%;
+}
+.playlist .name {
+  font-weight: bold;
+}
+.playlist .genres {
+  font-size: 0.9vw;
+}
